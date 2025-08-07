@@ -1,241 +1,694 @@
 <%- include('partials/header') %>
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>Building Excellence, Delivering Dreams</h1>
-        <p>Your trusted partner in construction excellence since 1995</p>
-        <a href="#contact" class="cta-button">Get Started</a>
-    </div>
-</section>
+    <section class="hero" style="background-image: url('/images/fazads/home-bg.png');">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Building Excellence, Delivering Dreams</h1>
+            <p>Your trusted partner in construction excellence since 1995</p>
+            <a href="#slider" class="cta-button">Get Started</a>
+        </div>
+    </section>
 
-<section class="promo-slider">
-    <div class="slider-container">
-        <div class="slider-wrapper" id="sliderWrapper">
-            <!-- Slide 1 -->
-            <div class="slide">
-                <div class="slide-content">
-                    <img src="/images/home-fully-loaded.jpg" alt="First Home Package">
-                    <div class="slide-text">
-                        <h2>Your First Home, Fully Loaded</h2>
-                        <p class="price">from $182,900*</p>
-                        <a href="/promotions/first-home" class="slide-btn">Learn More</a>
+    <style>
+        .hero {
+            position: relative;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background-color: #e41e31;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid #e41e31;
+        }
+
+        .cta-button:hover {
+            background-color: transparent;
+            color: #e41e31;
+        }
+    </style>
+
+    <section id="slider" class="promo-slider">
+        <div class="slider-container">
+            <div class="slider-wrapper" id="sliderWrapper">
+
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="/images/fazads/johan-15-01.png" alt="Johan Series">
+                        <div class="slide-text">
+                            <h2>Johan Series</h2>
+                            <p>Contemporary elegance meets comfort</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="/images/fazads/johan-15-02.png" alt="Johan Premium">
+                        <div class="slide-text">
+                            <h2>Johan Premium</h2>
+                            <p>Premium living spaces for modern families</p>
+                            <button class="slide-btn contact-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="/images/fazads/pablo-10-01.png" alt="Pablo Collection">
+                        <div class="slide-text">
+                            <h2>Pablo Collection</h2>
+                            <p>Innovative design meets functionality</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="/images/fazads/pablo-10-02.png" alt="Pablo Premium">
+                        <div class="slide-text">
+                            <h2>Pablo Premium</h2>
+                            <p>Exclusive living spaces with premium finishes</p>
+                            <button class="slide-btn contact-btn">Discover More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="/images/fazads/orchid.png" alt="Orchid Series">
+                        <div class="slide-text">
+                            <h2>Orchid Series</h2>
+                            <p>Elegant designs for sophisticated living</p>
+                            <button class="slide-btn contact-btn">Explore Series</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 7 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="/images/fazads/lily.png" alt="Lily Collection">
+                        <div class="slide-text">
+                            <h2>Lily Collection</h2>
+                            <p>Modern aesthetics with timeless appeal</p>
+                            <button class="slide-btn contact-btn">View Collection</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 8 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="/images/fazads/meadow.png" alt="Meadow Series">
+                        <div class="slide-text">
+                            <h2>Meadow Series</h2>
+                            <p>Natural beauty meets modern comfort</p>
+                            <button class="slide-btn contact-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 9 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="/images/fazads/daisy.png" alt="Daisy Collection">
+                        <div class="slide-text">
+                            <h2>Daisy Collection</h2>
+                            <p>Fresh perspectives in modern living</p>
+                            <button class="slide-btn contact-btn">Explore More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 10 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="/images/fazads/ruby.png" alt="Ruby Series">
+                        <div class="slide-text">
+                            <h2>Ruby Series</h2>
+                            <p>Luxurious living redefined</p>
+                            <button class="slide-btn contact-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 11 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <img src="/images/fazads/emerald.png" alt="Emerald Collection">
+                        <div class="slide-text">
+                            <h2>Emerald Collection</h2>
+                            <p>Premium living spaces with natural elegance</p>
+                            <button class="slide-btn contact-btn">Discover More</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Slide 2 -->
-            <div class="slide">
-                <div class="slide-content">
-                    <img src="/images/omega-appliances.jpg" alt="Omega Appliance Promotion">
-                    <div class="slide-text">
-                        <h2>Limited Time Offer: Omega Appliance Promotion</h2>
-                        <a href="/promotions/omega" class="slide-btn">View Offer</a>
+            <!-- Navigation Arrows -->
+            <button class="slider-nav prev" id="prevBtn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-nav next" id="nextBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Slider Dots -->
+            <div class="slider-dots">
+                <button class="dot active" data-index="0"></button>
+                <button class="dot" data-index="1"></button>
+                <button class="dot" data-index="2"></button>
+                <button class="dot" data-index="3"></button>
+                <button class="dot" data-index="4"></button>
+                <button class="dot" data-index="5"></button>
+                <button class="dot" data-index="6"></button>
+                <button class="dot" data-index="7"></button>
+                <button class="dot" data-index="8"></button>
+                <button class="dot" data-index="9"></button>
+                <button class="dot" data-index="10"></button>
+            </div>
+        </div>
+
+        <!-- Promotion Navigation -->
+    </section>
+
+    <style>
+        .promo-slider {
+            position: relative;
+            margin: 2rem 0;
+            overflow: hidden;
+            width: 100%;
+            height: 80vh;
+            /* Fixed height for the slider */
+        }
+
+        .slider-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: 100%;
+            height: 100%;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 100%;
+            padding: 0;
+        }
+
+        .slide-content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f5f5;
+            /* Light background for image container */
+        }
+
+        .slide-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* Changed from cover to contain */
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .slide-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: white;
+            z-index: 2;
+        }
+
+        .slide-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .slide-text p {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .slide-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #e41e31;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            border: 2px solid #e41e31;
+            cursor: pointer;
+        }
+
+        .slide-btn:hover {
+            background-color: transparent;
+            color: #e41e31;
+        }
+
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .slider-nav:hover {
+            background: white;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .slider-nav.prev {
+            left: 2rem;
+        }
+
+        .slider-nav.next {
+            right: 2rem;
+        }
+
+        .slider-dots {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.8rem;
+            z-index: 2;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            border: 2px solid white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot:hover {
+            transform: scale(1.2);
+        }
+
+        .dot.active {
+            background: white;
+            transform: scale(1.2);
+        }
+
+        .promo-navigation {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .nav-btn {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            color: #666;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-btn:hover {
+            color: #e41e31;
+        }
+
+        .nav-btn.active {
+            color: #e41e31;
+            font-weight: bold;
+            border-bottom-color: #e41e31;
+        }
+
+        @media (max-width: 768px) {
+            .slide-text h2 {
+                font-size: 2rem;
+            }
+
+            .slide-text p {
+                font-size: 1.1rem;
+            }
+
+            .slider-nav {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+
+            .slider-nav.prev {
+                left: 1rem;
+            }
+
+            .slider-nav.next {
+                right: 1rem;
+            }
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow: auto;
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90vh;
+            object-fit: contain;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f5f5f5;
+            /* Light background for modal image */
+        }
+
+        .modal-caption {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: white;
+            padding: 1rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1001;
+            transition: all 0.3s ease;
+        }
+
+        .modal-close:hover {
+            color: #e41e31;
+            transform: scale(1.1);
+        }
+
+        /* Update slide content to be clickable */
+        .slide-content:hover {
+            transform: scale(1.02);
+        }
+
+        /* Add zoom icon to slides */
+        .slide-content::after {
+            content: '\f00e';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .slide-content:hover::after {
+            opacity: 1;
+        }
+    </style>
+
+    <!-- Add this modal HTML right after the slider section -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <section class="features">
+        <h2>Why Choose Us</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-medal"></i>
+                <h3>Quality Assurance</h3>
+                <p>We maintain the highest standards in construction and safety</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>On-Time Delivery</h3>
+                <p>We complete projects within agreed timeframes</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Expert Team</h3>
+                <p>Our team consists of highly skilled professionals</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-dollar-sign"></i>
+                <h3>Competitive Pricing</h3>
+                <p>Quality construction at reasonable rates</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Construction Services Section -->
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <h2>Our Construction Services</h2>
+            <p>Professional and quality construction services tailored to meet the unique needs of each project</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-building service-icon"></i>
+                <h3>Commercial Construction</h3>
+                <p>Office buildings, retail spaces, and industrial facilities built to the highest standards.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-home service-icon"></i>
+                <h3>Residential Projects</h3>
+                <p>Custom homes and residential developments with attention to detail and quality.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-store service-icon"></i>
+                <h3>Retail Construction</h3>
+                <p>Modern retail spaces and shopping centers designed for optimal customer experience.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-hospital service-icon"></i>
+                <h3>Medical Facilities</h3>
+                <p>Specialized healthcare construction with strict adherence to medical facility standards.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tools service-icon"></i>
+                <h3>Project Management</h3>
+                <p>Comprehensive project management services from planning to completion.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-hard-hat service-icon"></i>
+                <h3>Interior Renovations</h3>
+                <p>Complete interior renovation and remodeling services for any space.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About Our Construction Company</h2>
+                <p>With over 25 years of experience in the construction industry, we've built our reputation on quality,
+                    innovation, and reliability. Our team of experts is dedicated to delivering exceptional results on
+                    every project.</p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Licensed and Certified Professionals</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Quality Materials and Equipment</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>On-Time Project Completion</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Competitive Pricing</span>
                     </div>
                 </div>
             </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Professional Staff</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Industry Awards</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <!-- Slide 3 -->
-            <div class="slide">
-                <div class="slide-content">
-                    <img src="/images/townhomes.jpg" alt="Townhomes">
-                    <div class="slide-text">
-                        <h2>FIXED PRICE TURNKEY</h2>
-                        <h3>TOWNHOMES FROM $444,900*</h3>
-                        <a href="/townhomes" class="slide-btn">Discover More</a>
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <p>Explore our portfolio of successful construction projects across various sectors</p>
+        </div>
+        <div class="project-filters">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Commercial</button>
+            <button class="filter-btn">Residential</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-category="commercial">
+                <div class="project-image">
+                    <img src="/images/projects/modern-office.jpg" alt="Modern Office Complex">
+                </div>
+                <div class="project-info">
+                    <h3>Modern Office Complex</h3>
+                    <p>Contemporary office building with sustainable features</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Commercial</span>
                     </div>
+                    <a href="#" class="project-link">View Project</a>
                 </div>
             </div>
-        </div>
-
-        <!-- Navigation Arrows -->
-        <button class="slider-nav prev" id="prevBtn">
-            <i class="fas fa-chevron-left"></i>
-        </button>
-        <button class="slider-nav next" id="nextBtn">
-            <i class="fas fa-chevron-right"></i>
-        </button>
-
-        <!-- Slider Dots -->
-        <div class="slider-dots">
-            <button class="dot active" data-index="0"></button>
-            <button class="dot" data-index="1"></button>
-            <button class="dot" data-index="2"></button>
-        </div>
-    </div>
-
-    <!-- Promotion Navigation -->
-    <div class="promo-navigation">
-        <button class="nav-btn active">Current offers</button>
-        <button class="nav-btn">Latest news</button>
-    </div>
-</section>
-
-<section class="features">
-    <h2>Why Choose Us</h2>
-    <div class="features-grid">
-        <div class="feature-card">
-            <i class="fas fa-medal"></i>
-            <h3>Quality Assurance</h3>
-            <p>We maintain the highest standards in construction and safety</p>
-        </div>
-        <div class="feature-card">
-            <i class="fas fa-clock"></i>
-            <h3>On-Time Delivery</h3>
-            <p>We complete projects within agreed timeframes</p>
-        </div>
-        <div class="feature-card">
-            <i class="fas fa-users"></i>
-            <h3>Expert Team</h3>
-            <p>Our team consists of highly skilled professionals</p>
-        </div>
-        <div class="feature-card">
-            <i class="fas fa-dollar-sign"></i>
-            <h3>Competitive Pricing</h3>
-            <p>Quality construction at reasonable rates</p>
-        </div>
-    </div>
-</section>
-
-
-<!-- Construction Services Section -->
-<section id="services" class="services-section">
-    <div class="section-header">
-        <h2>Our Construction Services</h2>
-        <p>Professional and quality construction services tailored to meet the unique needs of each project</p>
-    </div>
-    <div class="services-grid">
-        <div class="service-card">
-            <i class="fas fa-building service-icon"></i>
-            <h3>Commercial Construction</h3>
-            <p>Office buildings, retail spaces, and industrial facilities built to the highest standards.</p>
-        </div>
-        <div class="service-card">
-            <i class="fas fa-home service-icon"></i>
-            <h3>Residential Projects</h3>
-            <p>Custom homes and residential developments with attention to detail and quality.</p>
-        </div>
-
-        <div class="service-card">
-            <i class="fas fa-store service-icon"></i>
-            <h3>Retail Construction</h3>
-            <p>Modern retail spaces and shopping centers designed for optimal customer experience.</p>
-        </div>
-        <div class="service-card">
-            <i class="fas fa-hospital service-icon"></i>
-            <h3>Medical Facilities</h3>
-            <p>Specialized healthcare construction with strict adherence to medical facility standards.</p>
-        </div>
-        <div class="service-card">
-            <i class="fas fa-tools service-icon"></i>
-            <h3>Project Management</h3>
-            <p>Comprehensive project management services from planning to completion.</p>
-        </div>
-        <div class="service-card">
-            <i class="fas fa-hard-hat service-icon"></i>
-            <h3>Interior Renovations</h3>
-            <p>Complete interior renovation and remodeling services for any space.</p>
-        </div>
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="about" class="about-section">
-    <div class="about-container">
-        <div class="about-content">
-            <h2>About Our Construction Company</h2>
-            <p>With over 25 years of experience in the construction industry, we've built our reputation on quality, innovation, and reliability. Our team of experts is dedicated to delivering exceptional results on every project.</p>
-            <div class="about-features">
-                <div class="about-feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Licensed and Certified Professionals</span>
+            <div class="project-card" data-category="residential">
+                <div class="project-image">
+                    <img src="/images/projects/suburban-development.jpg" alt="Suburban Housing Development">
                 </div>
-                <div class="about-feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Quality Materials and Equipment</span>
-                </div>
-                <div class="about-feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>On-Time Project Completion</span>
-                </div>
-                <div class="about-feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Competitive Pricing</span>
+                <div class="project-info">
+                    <h3>Suburban Housing Development</h3>
+                    <p>Modern family homes with community amenities</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Residential</span>
+                    </div>
+                    <a href="#" class="project-link">View Project</a>
                 </div>
             </div>
-        </div>
-        <div class="about-stats">
-            <div class="stat-item">
-                <div class="stat-number">25+</div>
-                <div class="stat-label">Years Experience</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">500+</div>
-                <div class="stat-label">Projects Completed</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">150+</div>
-                <div class="stat-label">Professional Staff</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">15</div>
-                <div class="stat-label">Industry Awards</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Featured Projects Section -->
-<section id="projects" class="projects-section">
-    <div class="section-header">
-        <h2>Featured Projects</h2>
-        <p>Explore our portfolio of successful construction projects across various sectors</p>
-    </div>
-    <div class="project-filters">
-        <button class="filter-btn active">All</button>
-        <button class="filter-btn">Commercial</button>
-        <button class="filter-btn">Residential</button>
-    </div>
-    <div class="projects-grid">
-        <div class="project-card" data-category="commercial">
-            <div class="project-image">
-                <img src="/images/projects/modern-office.jpg" alt="Modern Office Complex">
-            </div>
-            <div class="project-info">
-                <h3>Modern Office Complex</h3>
-                <p>Contemporary office building with sustainable features</p>
-                <div class="project-tags">
-                    <span class="project-tag">Commercial</span>
+            <div class="project-card" data-category="residential">
+                <div class="project-image">
+                    <img src="/images/projects/luxury-homes.jpg" alt="Luxury Homes">
                 </div>
-                <a href="#" class="project-link">View Project</a>
-            </div>
-        </div>
-        <div class="project-card" data-category="residential">
-            <div class="project-image">
-                <img src="/images/projects/suburban-development.jpg" alt="Suburban Housing Development">
-            </div>
-            <div class="project-info">
-                <h3>Suburban Housing Development</h3>
-                <p>Modern family homes with community amenities</p>
-                <div class="project-tags">
-                    <span class="project-tag">Residential</span>
+                <div class="project-info">
+                    <h3>Luxury Family Homes</h3>
+                    <p>Custom-built luxury homes with premium finishes</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Residential</span>
+                    </div>
+                    <a href="#" class="project-link">View Project</a>
                 </div>
-                <a href="#" class="project-link">View Project</a>
             </div>
-        </div>
-        <div class="project-card" data-category="residential">
-            <div class="project-image">
-                <img src="/images/projects/luxury-homes.jpg" alt="Luxury Homes">
-            </div>
-            <div class="project-info">
-                <h3>Luxury Family Homes</h3>
-                <p>Custom-built luxury homes with premium finishes</p>
-                <div class="project-tags">
-                    <span class="project-tag">Residential</span>
-                </div>
-                <a href="#" class="project-link">View Project</a>
-            </div>
-        </div>
-                    <div class="project-card" data-category="residential">
+            <div class="project-card" data-category="residential">
                 <div class="project-image">
                     <img src="/images/projects/multi-units.jpg" alt="Multi Units">
                 </div>
@@ -248,109 +701,171 @@
                     <a href="#" class="project-link">View Project</a>
                 </div>
             </div>
-        <div class="project-card" data-category="residential">
-            <div class="project-image">
-                <img src="/images/projects/modern-townhouses.jpg" alt="Modern Townhouses">
-            </div>
-            <div class="project-info">
-                <h3>Modern Townhouses</h3>
-                <p>Contemporary townhouse development in prime location</p>
-                <div class="project-tags">
-                    <span class="project-tag">Residential</span>
+            <div class="project-card" data-category="residential">
+                <div class="project-image">
+                    <img src="/images/projects/modern-townhouses.jpg" alt="Modern Townhouses">
                 </div>
-                <a href="#" class="project-link">View Project</a>
+                <div class="project-info">
+                    <h3>Modern Townhouses</h3>
+                    <p>Contemporary townhouse development in prime location</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Residential</span>
+                    </div>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="residential,commercial">
+                <div class="project-image">
+                    <img src="/images/projects/mixed-residential.jpg" alt="Mixed Residential Development">
+                </div>
+                <div class="project-info">
+                    <h3>Mixed Residential Development</h3>
+                    <p>Integrated residential and commercial living spaces</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Residential</span>
+                        <span class="project-tag">Commercial</span>
+                    </div>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
             </div>
         </div>
-        <div class="project-card" data-category="residential,commercial">
-            <div class="project-image">
-                <img src="/images/projects/mixed-residential.jpg" alt="Mixed Residential Development">
-            </div>
-            <div class="project-info">
-                <h3>Mixed Residential Development</h3>
-                <p>Integrated residential and commercial living spaces</p>
-                <div class="project-tags">
-                    <span class="project-tag">Residential</span>
-                    <span class="project-tag">Commercial</span>
-                </div>
-                <a href="#" class="project-link">View Project</a>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Testimonials Section -->
-<section id="testimonials" class="testimonials-section">
-    <div class="section-header">
-        <h2>What Our Clients Say</h2>
-        <p>Read testimonials from our satisfied clients</p>
-    </div>
-    <div class="testimonials-grid">
-        <div class="testimonial-card">
-            <div class="testimonial-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <div class="testimonial-content">
-                "Outstanding quality and professionalism. They completed our office complex ahead of schedule and within budget. Highly recommended!"
-            </div>
-            <div class="testimonial-author">
-                <div class="author-image">
-                    <img src="/images/testimonials/client1.jpg" alt="Robert Johnson">
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-header">
+            <h2>What Our Clients Say</h2>
+            <p>Read testimonials from our satisfied clients</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
-                <div class="author-info">
-                    <h4>Robert Johnson</h4>
-                    <p>CEO, Johnson Enterprises</p>
+                <div class="testimonial-content">
+                    "Outstanding quality and professionalism. They completed our office complex ahead of schedule and
+                    within budget. Highly recommended!"
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="/images/testimonials/client1.jpg" alt="Robert Johnson">
+                    </div>
+                    <div class="author-info">
+                        <h4>Robert Johnson</h4>
+                        <p>CEO, Johnson Enterprises</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                    "Exceptional attention to detail and great communication throughout the project. The team was
+                    professional and efficient."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="/images/testimonials/client2.jpg" alt="Sarah Williams">
+                    </div>
+                    <div class="author-info">
+                        <h4>Sarah Williams</h4>
+                        <p>Property Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                    "Their expertise in industrial construction is unmatched. The project was delivered exactly as
+                    planned and the quality is outstanding."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="/images/testimonials/client3.jpg" alt="Michael Chen">
+                    </div>
+                    <div class="author-info">
+                        <h4>Michael Chen</h4>
+                        <p>Industrial Solutions Ltd.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="testimonial-card">
-            <div class="testimonial-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <div class="testimonial-content">
-                "Exceptional attention to detail and great communication throughout the project. The team was professional and efficient."
-            </div>
-            <div class="testimonial-author">
-                <div class="author-image">
-                    <img src="/images/testimonials/client2.jpg" alt="Sarah Williams">
-                </div>
-                <div class="author-info">
-                    <h4>Sarah Williams</h4>
-                    <p>Property Developer</p>
-                </div>
-            </div>
-        </div>
-        <div class="testimonial-card">
-            <div class="testimonial-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <div class="testimonial-content">
-                "Their expertise in industrial construction is unmatched. The project was delivered exactly as planned and the quality is outstanding."
-            </div>
-            <div class="testimonial-author">
-                <div class="author-image">
-                    <img src="/images/testimonials/client3.jpg" alt="Michael Chen">
-                </div>
-                <div class="author-info">
-                    <h4>Michael Chen</h4>
-                    <p>Industrial Solutions Ltd.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
 
 
-<%- include('partials/footer') %> 
+    <%- include('partials/footer') %>
+
+        <script>
+            // Add this script at the end of the file
+            document.addEventListener('DOMContentLoaded', function () {
+                const modal = document.getElementById('imageModal');
+                const modalImg = document.getElementById('modalImage');
+                const modalCaption = document.getElementById('modalCaption');
+                const closeBtn = document.querySelector('.modal-close');
+                const slides = document.querySelectorAll('.slide-content');
+
+                // Open modal when clicking on a slide
+                slides.forEach(slide => {
+                    slide.addEventListener('click', function () {
+                        const img = this.querySelector('img');
+                        const title = this.querySelector('h2').textContent;
+                        const description = this.querySelector('p').textContent;
+
+                        modal.style.display = 'block';
+                        modalImg.src = img.src;
+                        modalCaption.innerHTML = `<h3>${title}</h3><p>${description}</p>`;
+                        document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+                    });
+                });
+
+                // Close modal when clicking the close button
+                closeBtn.addEventListener('click', function () {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = ''; // Restore scrolling
+                });
+
+                // Close modal when clicking outside the image
+                modal.addEventListener('click', function (e) {
+                    if (e.target === modal) {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = '';
+                    }
+                });
+
+                // Close modal with Escape key
+                document.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape' && modal.style.display === 'block') {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = '';
+                    }
+                });
+
+                // Add contact form popup functionality for slider buttons
+                const contactButtons = document.querySelectorAll('.contact-btn');
+                const contactPopup = document.getElementById('contactPopup');
+
+                contactButtons.forEach(button => {
+                    button.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation(); // Prevent triggering the slide click event
+                        openPopup(contactPopup);
+                    });
+                });
+            });
+        </script>

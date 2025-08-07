@@ -502,13 +502,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Handle unimplemented features
     const unimplementedFeatures = {
-        '.social-links a': 'Social media integration coming soon!',
-        '.nav-btn': 'This feature is currently under development.',
-        '.project-link': 'Project details page coming soon!',
-        '.service-card': 'Detailed service information coming soon!',
-        '[href="#projects"]': 'Project gallery is under construction.',
-        '[href="#testimonials"]': 'Testimonials section is being updated.',
-        '.scroll-top': 'Smooth scrolling enhancement coming soon!'
+
     };
 
     // Add error handlers for unimplemented features
